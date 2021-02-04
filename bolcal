@@ -1,0 +1,12 @@
+#boolean calculator
+def logical_calc(array, op):
+
+    if array.count(False)<1 and op=="AND":
+        return 1
+
+    elif array.count(True)>0 and  op=='OR':
+        return 1
+    elif  array.count(True)%2!=0 and op=='XOR':
+        return 1
+    else: 
+        return 0
